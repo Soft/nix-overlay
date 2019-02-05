@@ -1,4 +1,4 @@
-{ stdenv, fetchFromGitHub }:
+{ stdenv, fetchFromGitHub, python3, libxcb }:
 
 let
   moz_overlay = import (builtins.fetchTarball https://github.com/mozilla/nixpkgs-mozilla/archive/master.tar.gz);
@@ -23,7 +23,7 @@ moz_buildRustPackage rec {
 
   cargoSha256 = "0j4znvpi60wx92lvdp0a0hdjgd228yxlcvmkrk49mqjnmp14x250";
 
-  buildInputs = with nixpkgs; [ xorg.libxcb python3 ];
+  buildInputs = [ libxcb python3 ];
 
   preFixup = ''
     mkdir -p "$out/man/man1"
