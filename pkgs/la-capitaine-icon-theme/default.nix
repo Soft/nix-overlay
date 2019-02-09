@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
   '';
 
   postInstall = ''
-    gtk-update-icon-cache "''${out}/share/icons/la-capitaine"
+    gtk-update-icon-cache $out/share/icons/la-capitaine"
   '';
 
   meta = with stdenv.lib; {
