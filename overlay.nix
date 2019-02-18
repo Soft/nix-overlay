@@ -1,12 +1,13 @@
-selft: super:
+self: super:
 
 {
+  cargo-watch = super.callPackage ./pkgs/cargo-watch {};
+  emacs-gtk-style-ext = super.callPackage ./pkgs/emacs-gtk-style-ext {};
+  korla-icon-theme = super.callPackage ./pkgs/korla-icon-theme {};
+  la-capitaine-icon-theme = super.callPackage ./pkgs/la-capitaine-icon-theme {};
+  mbox = super.callPackage ./pkgs/mbox {};
+  plasma-applet-weather-widget = super.libsForQt5.callPackage ./pkgs/plasma-applet-weather-widget {};
   rainbowpath = super.callPackage ./pkgs/rainbowpath {};
   run-or-raise = super.callPackage ./pkgs/run-or-raise {};
-  cargo-watch = super.callPackage ./pkgs/cargo-watch {};
-  la-capitaine-icon-theme = super.callPackage ./pkgs/la-capitaine-icon-theme {};
-  korla-icon-theme = super.callPackage ./pkgs/korla-icon-theme {};
-  plasma-applet-weather-widget = super.libsForQt5.callPackage ./pkgs/plasma-applet-weather-widget {};
-  emacs-gtk-style-ext = super.callPackage ./pkgs/emacs-gtk-style-ext {};
   xcolor = super.callPackage ./pkgs/xcolor {};
 }
