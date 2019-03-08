@@ -7,6 +7,7 @@ self: super:
   la-capitaine-icon-theme = super.callPackage ./pkgs/la-capitaine-icon-theme {};
   mbox = super.callPackage ./pkgs/mbox {};
   plasma-applet-weather-widget = super.libsForQt5.callPackage ./pkgs/plasma-applet-weather-widget {};
+  procs = super.callPackage ./pkgs/procs {};
   rainbowpath = super.callPackage ./pkgs/rainbowpath {};
   run-or-raise = super.callPackage ./pkgs/run-or-raise {};
   xcolor = super.callPackage ./pkgs/xcolor {};
