@@ -3,6 +3,7 @@ self: super:
 {
   cargo-watch = super.callPackage ./pkgs/cargo-watch {};
   emacs-gtk-style-ext = super.callPackage ./pkgs/emacs-gtk-style-ext {};
+  genius-now-playing = super.callPackage ./pkgs/genius-now-playing {};
   korla-icon-theme = super.callPackage ./pkgs/korla-icon-theme {};
   la-capitaine-icon-theme = super.callPackage ./pkgs/la-capitaine-icon-theme {};
   mbox = super.callPackage ./pkgs/mbox {};

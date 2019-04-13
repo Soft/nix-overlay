@@ -1,16 +1,6 @@
-{ stdenv, fetchFromGitHub }:
+{ stdenv, fetchFromGitHub, rustPlatform }:
 
-let
-  moz_overlay = import (builtins.fetchTarball https://github.com/mozilla/nixpkgs-mozilla/archive/master.tar.gz);
-  nixpkgs = import <nixpkgs> { overlays = [ moz_overlay ]; };
-  moz_buildRustPackage = nixpkgs.callPackage (import <nixpkgs/pkgs/build-support/rust>) {
-    rust = {
-      rustc = nixpkgs.latest.rustChannels.stable.rust;
-      cargo = nixpkgs.latest.rustChannels.stable.cargo;
-    };
-  };
-in
-moz_buildRustPackage rec {
+rustPlatform.buildRustPackage rec {
   name = "procs-${version}";
   version = "0.6.0";
 
