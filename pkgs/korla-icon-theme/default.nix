@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "korla-icon-theme-${version}";
-  version = "0.8.5";
+  version = "1.0.5";
 
   src = fetchFromGitHub {
     owner = "bikass";
     repo = "korla";
     rev = "v${version}";
-    sha256 = "049ch6ky4f6c51v46ns4lywzzys03k6blmbqxnrl8fdqy5jpnidh";
+    sha256 = "1a4qq1jcdsznaw235cm3qxj8zvgyql178snkk0wyfjsgqbv8160y";
   };
 
   nativeBuildInputs = [ breeze-icons gtk3 ];
