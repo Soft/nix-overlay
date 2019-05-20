@@ -11,5 +11,6 @@ self: super:
   procs = super.callPackage ./pkgs/procs {};
   rainbowpath = super.callPackage ./pkgs/rainbowpath {};
   run-or-raise = super.callPackage ./pkgs/run-or-raise {};
+  tela-icon-theme = super.callPackage ./pkgs/tela-icon-theme {};
   xcolor = super.callPackage ./pkgs/xcolor {};
 }
