@@ -7,6 +7,7 @@ self: super:
   korla-icon-theme = super.callPackage ./pkgs/korla-icon-theme {};
   la-capitaine-icon-theme = super.callPackage ./pkgs/la-capitaine-icon-theme {};
   mbox = super.callPackage ./pkgs/mbox {};
+  national-park-typeface = super.callPackage ./pkgs/national-park-typeface {};
   plasma-applet-weather-widget = super.libsForQt5.callPackage ./pkgs/plasma-applet-weather-widget {};
   procs = super.callPackage ./pkgs/procs {};
   rainbowpath = super.callPackage ./pkgs/rainbowpath {};
