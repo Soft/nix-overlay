@@ -2,6 +2,7 @@ self: super:
 
 {
   cargo-watch = super.callPackage ./pkgs/cargo-watch {};
+  dnsproxy = super.callPackage ./pkgs/dnsproxy {};
   emacs-gtk-style-ext = super.callPackage ./pkgs/emacs-gtk-style-ext {};
   genius-now-playing = super.callPackage ./pkgs/genius-now-playing {};
   korla-icon-theme = super.callPackage ./pkgs/korla-icon-theme {};
