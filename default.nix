@@ -14,5 +14,6 @@ self: super:
   rainbowpath = super.callPackage ./pkgs/rainbowpath {};
   run-or-raise = super.callPackage ./pkgs/run-or-raise {};
   tela-icon-theme = super.callPackage ./pkgs/tela-icon-theme {};
+  victor-mono = super.callPackage ./pkgs/victor-mono {};
   xcolor = super.callPackage ./pkgs/xcolor {};
 }
