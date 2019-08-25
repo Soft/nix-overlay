@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "victor-mono-${version}";
-  version = "1.2.2";
+  version = "1.2.5";
 
   src = fetchFromGitHub {
     owner = "rubjo";
     repo = "victor-mono";
     rev = "v${version}";
-    sha256 = "15pihpnhh4iim79m8sgadh0i8wb0znfdlhh64kfi4gfpxpg86jka";
+    sha256 = "199wb6641ys4krw7csgys21l7m8m245mpjjgi918jbki285s753q";
   };
 
   installPhase = ''
