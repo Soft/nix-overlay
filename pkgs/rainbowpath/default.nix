@@ -1,17 +1,19 @@
-{ stdenv, fetchFromGitHub, autoreconfHook }:
+{ stdenv, fetchFromGitHub, autoreconfHook, pkgconfig, ncurses }:
 
 stdenv.mkDerivation rec {
   name = "rainbowpath-${version}";
-  version = "0.3.1";
+  version = "0.4";
 
   src = fetchFromGitHub {
     owner = "Soft";
     repo = "rainbowpath";
     rev = "${version}";
-    sha256 = "04w11i8zb1xfv0kc5nms0fdhz5is1vcjsq1pyxq0ss3bvq0rk3hn";
+    sha256 = "1yb3zn7553hsqmd9r64d5hkbax9nzhmq6pxyl4n4wnmbg9m1nkvx";
   };
 
-  nativeBuildInputs = [ autoreconfHook ];
+  nativeBuildInputs = [ autoreconfHook pkgconfig ];
+
+  buildInputs = [ ncurses ];
 
   preFixup = ''
     mkdir -p "$out/man/man1"
