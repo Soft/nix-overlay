@@ -13,6 +13,7 @@ self: super:
   procs = super.callPackage ./pkgs/procs {};
   rainbowpath = super.callPackage ./pkgs/rainbowpath {};
   run-or-raise = super.callPackage ./pkgs/run-or-raise {};
+  bulkrename = super.callPackage ./pkgs/bulkrename {};
   tela-icon-theme = super.callPackage ./pkgs/tela-icon-theme {};
   victor-mono = super.callPackage ./pkgs/victor-mono {};
   xcolor = super.callPackage ./pkgs/xcolor {};
