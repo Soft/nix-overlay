@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   name = "rainbowpath-${version}";
-  version = "0.4";
+  version = "0.5";
 
   src = fetchFromGitHub {
     owner = "Soft";
     repo = "rainbowpath";
     rev = "${version}";
-    sha256 = "1yb3zn7553hsqmd9r64d5hkbax9nzhmq6pxyl4n4wnmbg9m1nkvx";
+    sha256 = "14jwsx0ap6nyw2qd3aczx2ih5f0md2dzlxqah3l6s0wncvk7fypi";
   };
 
   nativeBuildInputs = [ autoreconfHook pkgconfig ];
