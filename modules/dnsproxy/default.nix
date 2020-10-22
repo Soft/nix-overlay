@@ -11,17 +11,13 @@ in {
     upstream = mkOption {
       type = types.str;
       default = "https://mozilla.cloudflare-dns.com/dns-query";
-      description = ''
-        Upstream to be used.
-      '';
+      description = "Upstream to be used.";
     };
 
     bootstrap = mkOption {
       type = types.str;
       default = "1.1.1.1:53";
-      description = ''
-        Bootstrap DNS for DoH and DoT.
-      '';
+      description = "Bootstrap DNS for DoH and DoT.";
     };
 
     port = mkOption {
@@ -33,7 +29,7 @@ in {
     verbose = mkOption {
       type = types.bool;
       default = false;
-      description = "Enabel verbose output";
+      description = "Enable verbose output.";
     };
   };
 
