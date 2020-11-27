@@ -1,0 +1,17 @@
+diff --git a/gui/gui.pro b/gui/gui.pro
+index 1ca60e4..4fca576 100644
+--- a/gui/gui.pro
++++ b/gui/gui.pro
+@@ -61,10 +61,8 @@ INCLUDEPATH += '../equalizer'
+ unix:LIBS += -L ../equalizer -lequalizer -lm -lpulse -lpthread -ffast-math -fopenmp
+ TARGET = ../prettyeq
+ 
+-# Default rules for deployment.
+-qnx: target.path = /tmp/$${TARGET}/bin
+-else: unix:!android: target.path = /opt/$${TARGET}/bin
+-!isEmpty(target.path): INSTALLS += target
++target.path = $$PREFIX/bin
++INSTALLS += target
+ 
+ RESOURCES += \
+     resources.qrc

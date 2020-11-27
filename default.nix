@@ -11,6 +11,7 @@ self: super:
   mbox = super.callPackage ./pkgs/mbox {};
   national-park-typeface = super.callPackage ./pkgs/national-park-typeface {};
   plasma-applet-weather-widget = super.libsForQt5.callPackage ./pkgs/plasma-applet-weather-widget {};
+  prettyeq = super.libsForQt5.callPackage ./pkgs/prettyeq {};
   procs = super.callPackage ./pkgs/procs {};
   rainbowpath = super.callPackage ./pkgs/rainbowpath {};
   run-or-raise = super.callPackage ./pkgs/run-or-raise {};
