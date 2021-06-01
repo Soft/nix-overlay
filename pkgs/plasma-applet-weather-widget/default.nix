@@ -21,6 +21,8 @@ stdenv.mkDerivation rec {
      kwindowsystem
   ];
 
+  dontWrapQtApps = true;
+
   meta = with stdenv.lib; {
     description = "Plasma 5 applet for displaying weather information from yr.no server.";
     homepage = https://github.com/kotelnik/plasma-applet-weather-widget;

@@ -31,6 +31,8 @@ stdenv.mkDerivation rec {
        $out/share/icons/la-capitaine
   '';
 
+  dontWrapQtApps = true;
+
   postInstall = ''
     gtk-update-icon-cache $out/share/icons/la-capitaine"
   '';
